@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fly Food</string>
+    <string name="button_START">START</string>
+    <string name="button_Guides">Guide</string>
+    <string name="button_Credits">Credits</string>
+    <string name="button_Quit">Quit</string>
+    <string name="developed_by">Developed by:</string>
+    <string name="developer_name">Ali Elganzory</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="linkedin_link">linkedin.com/in/AliElganzory</string>
+    <string name="b_Call">Call</string>
+    <string name="support">Support:</string>
+    <string name="laptop">Laptop</string>
+    <string name="bed">Bed</string>
+    <string name="Menu_Title">fly FOOd</string>
+    <string name="a_flying_food">Flying food</string>
+    <string name="Start_Score">0</string>
+    <string name="GO_replay">PLAY AGAIN</string>
+    <string name="GO_menu">MENU</string>
+    <string name="target_view">Target</string>
+    <string name="High_Score">High-score:</string>
+    <string name="menu_high_score">0</string>
+    <string name="fullTime">90</string>
+    <string name="TimerTitle">Time:</string>
+</resources>

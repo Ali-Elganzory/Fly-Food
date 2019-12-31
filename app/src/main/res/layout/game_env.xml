@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GameEnv">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFE9BD" android:id="@+id/frameLayout" app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+            android:text="@string/fullTime"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/TimerText"
+            app:layout_constraintStart_toStartOf="@+id/Left_GuideLine"
+            app:layout_constraintBottom_toTopOf="@+id/gh1" app:layout_constraintVertical_bias="0.68"
+            android:textSize="36sp" app:layout_constraintEnd_toStartOf="@+id/score_text"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:text="@string/TimerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/TimerTitle"
+            app:layout_constraintEnd_toStartOf="@+id/score_text"
+            app:layout_constraintStart_toStartOf="@+id/Left_GuideLine"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/gh1" app:layout_constraintVertical_bias="0.26"
+            android:textSize="32sp" android:typeface="normal" android:textStyle="bold" android:textAllCaps="true"/>
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh2"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f19"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh3"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh3"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f11"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh4"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh7"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f20"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh8"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh10"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f14"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh11"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh4"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f18"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh5"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh5"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f13"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh6"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh6"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f17"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh7"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh8"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f12"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh9"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh9"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false" android:id="@+id/f16"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh10"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh1"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Right_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Right_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f15"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh2"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh2"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f3"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh3"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh9"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f2"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh10"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f6"
+                 app:layout_constraintTop_toBottomOf="@+id/gh6"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh7"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh10"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f5"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh11"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh7"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f10"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh8"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f7"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintTop_toBottomOf="@+id/gh1"
+                 app:layout_constraintBottom_toTopOf="@+id/gh2"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh5"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f1"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh6"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh8"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f8"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh9"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 app:layout_constraintTop_toBottomOf="@+id/gh3"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 android:id="@+id/f4"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh4"/>
+
+    <ImageButton android:layout_width="@dimen/Zero_dp"
+                 app:layout_constraintWidth_percent="0.12"
+                 android:layout_height="@dimen/Zero_dp"
+                 app:layout_constraintHeight_percent="0.07"
+                 android:background="@drawable/send"
+                 android:contentDescription="@string/a_flying_food"
+                 android:soundEffectsEnabled="false"
+                 app:layout_constraintRight_toLeftOf="@+id/Left_GuideLine"
+                 app:layout_constraintEnd_toStartOf="@+id/Left_GuideLine"
+                 android:layout_marginRight="40px"
+                 android:layout_marginEnd="40px"
+                 app:layout_constraintTop_toBottomOf="@+id/gh4" android:id="@+id/f9"
+                 android:onClick="flyCatch" tools:ignore="OnClick,PxUsage"
+                 app:layout_constraintBottom_toTopOf="@+id/gh5"/>
+
+    <TextView
+            android:text="@string/Start_Score"
+            app:fontFamily="@font/numbersfont"
+            android:textSize="52sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/gh1"
+            app:layout_constraintVertical_bias="0.53"
+            app:layout_constraintStart_toStartOf="@+id/Left_GuideLine"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Left_GuideLine"
+            app:layout_constraintGuide_percent="0" app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Right_GuideLine"
+            app:layout_constraintGuide_percent="0.0"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh1"
+            app:layout_constraintGuide_percent="0.20"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh2"
+            app:layout_constraintGuide_percent="0.27"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh3"
+            app:layout_constraintGuide_percent="0.34"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh4"
+            app:layout_constraintGuide_percent="0.41"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh5"
+            app:layout_constraintGuide_percent="0.48"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh6"
+            app:layout_constraintGuide_percent="0.55"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh7"
+            app:layout_constraintGuide_percent="0.62"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh8"
+            app:layout_constraintGuide_percent="0.69"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh9"
+            app:layout_constraintGuide_percent="0.76"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh10"
+            app:layout_constraintGuide_percent="0.83"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/gh11"
+            app:layout_constraintGuide_percent="0.90"/>
+
+    <ImageButton
+            android:layout_width="@dimen/Zero_dp"
+            android:layout_height="@dimen/Zero_dp"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintHeight_percent="0.12"
+            android:background="@drawable/jam03"
+            android:id="@+id/Target"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58000004"
+            android:contentDescription="@string/target_view"
+            app:layout_constraintStart_toEndOf="@+id/score_text"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintBottom_toTopOf="@+id/gh1"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <FrameLayout
+            android:id="@+id/disableTouch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:alpha="0.4"
+            android:clickable="true"
+            android:visibility="gone"
+            tools:ignore="KeyboardInaccessibleWidget">
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/GameOver_Container"
+            android:layout_width="@dimen/Zero_dp"
+            android:layout_height="@dimen/Zero_dp"
+            app:layout_constraintWidth_percent="0.85"
+            app:layout_constraintHeight_percent="0.30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone">
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

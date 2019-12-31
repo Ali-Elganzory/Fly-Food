@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/game_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GameOver"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <Button android:id="@+id/replay"
+                android:text="@string/GO_replay"
+                android:textSize="22sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:background="@drawable/menu_b"
+                android:layout_width="@dimen/Zero_dp"
+                android:layout_height="@dimen/Zero_dp"
+                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintTop_toTopOf="@+id/menu"
+                app:layout_constraintBottom_toBottomOf="@+id/menu"
+                app:layout_constraintStart_toEndOf="@+id/menu"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.69"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"/>
+
+        <Button android:id="@+id/menu"
+                android:text="@string/GO_menu"
+                android:textSize="22sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:background="@drawable/menu_b"
+                android:layout_width="@dimen/Zero_dp"
+                android:layout_height="@dimen/Zero_dp"
+                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/replay"
+                app:layout_constraintVertical_bias="0.688"
+                app:layout_constraintTop_toBottomOf="@+id/FinalScore"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"/>
+
+        <TextView
+                android:text="@string/Start_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FinalScore"
+                android:textSize="42sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline6"
+                app:layout_constraintVertical_bias="0.331" app:fontFamily="@font/numbersfont"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/menu"
+        />
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline4" app:layout_constraintGuide_percent="0.1"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline5" app:layout_constraintGuide_percent="0.90547943"/>
+        <android.support.constraint.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline6" app:layout_constraintGuide_percent="0.1"/>
+        <android.support.constraint.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline7" app:layout_constraintGuide_percent="0.9"/>
+
+
+</android.support.constraint.ConstraintLayout>
