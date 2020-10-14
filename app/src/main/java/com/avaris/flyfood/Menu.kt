@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.View

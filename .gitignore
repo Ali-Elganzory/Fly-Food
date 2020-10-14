@@ -11,3 +11,7 @@
 /build
 /captures
 .externalNativeBuild
+
+/graphic
+
+/keystore
